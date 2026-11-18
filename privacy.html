@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Personal Google CLI</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#14181f;
+    --muted:#5b6470;
+    --line:#e4e7ec;
+    --accent:#1a5fff;
+    --card:#f8f9fb;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e1116;
+      --fg:#e9edf3;
+      --muted:#9aa4b2;
+      --line:#232a34;
+      --accent:#7aa2ff;
+      --card:#151a21;
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font:400 16px/1.65 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:clamp(1.75rem,6vw,4.5rem) 1.25rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:44rem;margin:0 auto}
+  h1{
+    font-size:clamp(1.55rem,5vw,2.125rem);
+    line-height:1.2;
+    letter-spacing:-.02em;
+    margin:0 0 .75rem;
+    font-weight:650;
+  }
+  .meta{
+    font-size:.875rem;
+    color:var(--muted);
+    margin:0 0 1.75rem;
+  }
+  h2{
+    font-size:1.0625rem;
+    line-height:1.35;
+    letter-spacing:-.01em;
+    font-weight:650;
+    margin:2.25rem 0 .6rem;
+  }
+  p{margin:0 0 1rem}
+  ul{margin:0 0 1rem;padding-left:1.15rem}
+  li{margin:.3rem 0}
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.9em;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:.1em .35em;
+  }
+  a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;word-break:break-word}
+  a:hover{text-decoration-thickness:2px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  .note{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:1rem 1.15rem;
+    margin:0 0 1rem;
+  }
+  .note p:last-child{margin-bottom:0}
+  footer{
+    margin-top:2.75rem;
+    padding-top:1.25rem;
+    border-top:1px solid var(--line);
+    font-size:.8125rem;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    Effective date: <strong>November 18, 2026</strong><br>
+    Owner &amp; Contact: Aleksandr Korolev -
+    <a href="mailto:samrockad@gmail.com">samrockad@gmail.com</a>
+  </p>
+
+  <h2>Purpose &amp; Scope</h2>
+  <p>
+    Personal Google CLI is a single-user local command-line and MCP (Model
+    Context Protocol) utility. It is used exclusively by its owner,
+    <strong>samrockad@gmail.com</strong>. There are no other users, no
+    registration, and no public or hosted instance of this tool. This policy
+    describes how it handles Google user data.
+  </p>
+
+  <h2>Google API Data Accessed</h2>
+  <p>The tool requests only the following Google API scopes:</p>
+  <ul>
+    <li>
+      <code>gmail.readonly</code> - read-only access to the owner's Gmail
+      messages and threads.
+    </li>
+    <li>
+      <code>gmail.compose</code> - creation and management of Gmail drafts on
+      behalf of the owner.
+    </li>
+    <li>
+      <code>calendar.readonly</code> - read-only access to the owner's Google
+      Calendar events.
+    </li>
+  </ul>
+  <p>
+    No other Google APIs, data types, or scopes are accessed. The tool does not
+    send email, delete mail, modify calendars, or read any account other than the
+    owner's own.
+  </p>
+
+  <h2>Data Storage &amp; Sharing</h2>
+  <p>
+    All OAuth credentials, tokens, and any fetched mail or calendar data remain
+    strictly local on the owner's own workstation. The tool runs locally and
+    communicates only with Google's APIs.
+  </p>
+  <ul>
+    <li>No external or third-party servers are operated or used by this tool.</li>
+    <li>No analytics, telemetry, tracking, or advertising is present.</li>
+    <li>
+      No Google user data is shared, transferred, sold, or disclosed to any third
+      party.
+    </li>
+  </ul>
+
+  <div class="note">
+    <p>
+      <strong>Limited Use compliance.</strong> The use of information received
+      from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+  </div>
+
+  <h2>Data Deletion &amp; Revocation</h2>
+  <p>
+    The owner can revoke this tool's access to their Google Account at any time
+    from the Google Account Permissions page:
+    <a href="https://myaccount.google.com/permissions" rel="noopener">https://myaccount.google.com/permissions</a>.
+    Locally stored token files can be deleted from the workstation at any time;
+    once deleted, the tool no longer has access to any Google data.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    Any future change to the scopes or data handling described above will be
+    reflected on this page together with a revised effective date.
+  </p>
+
+  <footer>
+    <a href="index.html">Home</a> ·
+    <a href="mailto:samrockad@gmail.com">samrockad@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
