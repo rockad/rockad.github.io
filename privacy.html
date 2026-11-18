@@ -106,30 +106,23 @@
   <p>The tool requests only the following Google API scopes:</p>
   <ul>
     <li>
-      <code>gmail.readonly</code> - read-only access to the owner's Gmail
-      messages and threads.
+      <code>openid</code>, <code>userinfo.email</code>, <code>userinfo.profile</code> - basic Google account identity for single-user authentication.
     </li>
     <li>
-      <code>gmail.compose</code> - creation and management of Gmail drafts on
-      behalf of the owner.
+      <code>gmail.readonly</code>, <code>gmail.compose</code>, <code>gmail.send</code>, <code>gmail.modify</code>, <code>gmail.labels</code>, <code>gmail.settings.basic</code> - reading, drafting, sending, labeling, and managing the owner's Gmail messages and settings when requested by the owner.
     </li>
     <li>
-      <code>calendar.readonly</code> - read-only access to the owner's Google
-      Calendar events.
+      <code>calendar.readonly</code>, <code>calendar</code>, <code>calendar.events</code> - reading and managing the owner's Google Calendar events and availability.
     </li>
     <li>
-      <code>documents</code> - read and write access to Google Docs documents
-      specified by the owner.
+      <code>documents</code> - reading and editing Google Docs documents specified by the owner.
     </li>
     <li>
-      <code>drive.file</code> - per-file Drive access to list, create, and manage
-      Google Docs created or opened by this tool.
+      <code>drive.file</code> - per-file Drive access to list, create, and manage Google Docs created or opened by this tool.
     </li>
   </ul>
   <p>
-    No other Google APIs, data types, or scopes are accessed. The tool does not
-    send email, delete mail, modify calendars, or read any account other than the
-    owner's own.
+    No other Google APIs, data types, or accounts are accessed outside the owner's own workflows.
   </p>
 
   <h2>Data Storage &amp; Sharing</h2>
